@@ -106,7 +106,7 @@ export default function HeroSection(){
             </div>
 
             <span
-              className="absolute left-1/2 -translate-x-1/2 font-mono text-xs text-[var(--text-secondary)]"
+              className="absolute left-1/2 -translate-x-1/2 font-mono text-xs text-[aliceblue]"
             >
               ~/portfolio
             </span>
