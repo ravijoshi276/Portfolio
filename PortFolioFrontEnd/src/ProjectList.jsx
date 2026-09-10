@@ -102,7 +102,11 @@ export const ProjectList = [
                 }
             }
         ]
-    }
+    },
+     {
+        category: 'Data Engineering',
+        projects: []
+     }
 ];
 
 

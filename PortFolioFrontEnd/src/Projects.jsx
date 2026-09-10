@@ -9,7 +9,7 @@ export default function Projects (){
                 setSelectedCategory(name);
         }
         const filteredProjects = selectedCategory=="ALL"? ProjectList : ProjectList.filter(project=>project.category===selectedCategory)
-        const item = ProjectList[0].projects[0]
+
     return (<div className='relative'>
         <Heading >Things I've built.</Heading>
         <p className='text-[var(--text-secondary)]'>A collection of projects spanning full-stack development, analytics, machine learning, and data engineering.</p>
@@ -19,8 +19,8 @@ export default function Projects (){
         </div>
             <div><Heading className="ml-10 mb-10">{selectedCategory} </Heading>
             
-                {filteredProjects.map((category,index)=>(<div key={index}>
-                   { category.projects.map(item=><Card title={item.title} stack={item.stack} description={item.description} links={item.links} image={item.image}/>)}
+                {filteredProjects.map((category,index)=>(<div key={index} className='mb-10 flex flex-col gap-10  w-full items-center  '>
+                   {category.projects.length==0 && selectedCategory != "ALL"?<div className=' w-full absolute left-[50%] mx-20  text-[grey]'> Projects will be added soon </div>: category.projects.map(item=><Card title={item.title} stack={item.stack} description={item.description} links={item.links} image={item.image}/>)}
                 </div>))}
                     
             </div>

@@ -4,8 +4,8 @@ export default function Header ({activeSection}){
     const [isOpen,setIsOpen] = useState(false);
     const links = [
             {label:'Home',link:''},
-            {label:'Skills',link:''},
             {label:'Projects',link:''},
+            {label:'Skills',link:''},
             {label:'About',link:''}
     ]
 

@@ -89,6 +89,18 @@ export default function HeroSection(){
               ↗
             </span>
           </a>
+          <a
+            href="https://drive.google.com/file/d/1B2j6AdLBlH3POCie-OpNywgyEy0iM1FF/view?usp=drive_link"
+            target="_blank"
+            className="group inline-flex items-center px-2 py-3 font-mono text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--accent-hover)]"
+          >
+            Checkout Resume
+            <span
+              className="ml-1 transition-transform group-hover:-translate-x-0.8 "
+            >
+              ➡️
+            </span>
+          </a>
         </div>
       </div>
 
