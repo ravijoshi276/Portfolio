@@ -112,4 +112,3 @@ export const ProjectList = [
 
 
 export const CategoryList = ["ALL",...new Set(ProjectList.map(item=>item.category))]
-console.log(CategoryList)

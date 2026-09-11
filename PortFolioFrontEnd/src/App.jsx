@@ -67,7 +67,7 @@ function App() {
     <Header activeSection={isActiveSection} />
     
     
-    {Sections.map((item)=><Section id={item.id} className=' min-h-screen border-4 border-[var(--border)] '>{item.ele}</Section>)}
+    {Sections.map((item,index)=><Section  key={index} id={item.id} className=' min-h-screen border-4 border-[var(--border)] '>{item.ele}</Section>)}
     <Footer />
     </div>
   )

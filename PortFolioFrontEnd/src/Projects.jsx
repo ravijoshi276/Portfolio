@@ -3,6 +3,7 @@ import Section from './Section'
 import { ProjectList } from './ProjectList'
 import FilteProject from './FilterProjects'
 import { useState } from 'react'
+import placeholder from './assets/ProjectsPlaceholder.png'
 export default function Projects (){
         const [selectedCategory, setSelectedCategory] = useState('ALL');
         const changeCategory = (name)=>{
@@ -20,7 +21,7 @@ export default function Projects (){
             <div><Heading className="ml-10 mb-10">{selectedCategory} </Heading>
             
                 {filteredProjects.map((category,index)=>(<div key={index} className='mb-10 flex flex-col gap-10  w-full items-center  '>
-                   {category.projects.length==0 && selectedCategory != "ALL"?<div className=' w-full absolute left-[50%] mx-20  text-[grey]'> Projects will be added soon </div>: category.projects.map(item=><Card title={item.title} stack={item.stack} description={item.description} links={item.links} image={item.image}/>)}
+                   {category.projects.length==0 && selectedCategory != "ALL"?<div className=' w-full absolute left-[50%] mx-20  text-[grey]'> Projects will be added soon </div>: category.projects.map((item,index)=><Card key={index} title={item.title} stack={item.stack} description={item.description} links={item.links} image={item.image.length ? item.image : placeholder}/>)}
                 </div>))}
                     
             </div>
