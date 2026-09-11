@@ -97,7 +97,7 @@ export default function HeroSection(){
           >
             Checkout Resume
             <span
-              className="ml-1 transition-transform group-hover:-translate-x-0.8 "
+              className="ml-1 transition-transform group-hover:translate-x-1 "
             >
               ➡️
             </span>

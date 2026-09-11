@@ -10,9 +10,9 @@ export default function Projects (){
         }
         const filteredProjects = selectedCategory=="ALL"? ProjectList : ProjectList.filter(project=>project.category===selectedCategory)
 
-    return (<div className='relative'>
-        <Heading >Things I've built.</Heading>
-        <p className='text-[var(--text-secondary)]'>A collection of projects spanning full-stack development, analytics, machine learning, and data engineering.</p>
+    return (<div className='relative p-3'>
+        <Heading className='text-xl ' >Things I've built.</Heading>
+        <p className='text-[var(--text-secondary)] text-sm'>A collection of projects spanning full-stack development, analytics, machine learning, and data engineering.</p>
         <Section className='flex items-start gap-3 mt-8 w-full'>
         <div className='sticky top-[20%] left-0 min-w-[200px] w-[15%]'>
             <FilteProject changeCategory={changeCategory} category={selectedCategory} />
