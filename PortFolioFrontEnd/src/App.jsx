@@ -1,15 +1,14 @@
 import { useState,useEffect } from 'react'
-import reactLogo from './assets/react.svg'
 import Header from './Header'
 import './App.css'
 import Section from './Section'
 import SkillsSection from './SkillsSection'
 import HeroSection from './HeroSection'
 import Projects from './Projects'
-
-
+import About from './About'
+import Footer from './Footer'
 function App() {
-  const Sections = [{id:'home',ele:<HeroSection/>},{id:'projects',ele:<Projects />},{id:'skills',ele:<SkillsSection />},{id:'about',ele:""}]
+  const Sections = [{id:'home',ele:<HeroSection/>},{id:'projects',ele:<Projects />},{id:'skills',ele:<SkillsSection />},{id:'about',ele:<About/>}]
   const [isActiveSection,setIsActveSection]= useState('home')
 
     useEffect(() => {
@@ -69,6 +68,7 @@ function App() {
     
     
     {Sections.map((item)=><Section id={item.id} className=' min-h-screen border-4 border-[var(--border)] '>{item.ele}</Section>)}
+    <Footer />
     </div>
   )
 }

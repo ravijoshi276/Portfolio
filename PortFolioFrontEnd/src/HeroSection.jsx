@@ -23,11 +23,12 @@ export default function HeroSection(){
         <div
           className="mb-6 flex flex-wrap items-center gap-2 font-mono text-xs font-medium tracking-[0.16em] text-[var(--accent)] sm:text-sm"
         >
+          <span className="text-[var(--text-primary)]  mr-2 font-bold w-full">Ravi Joshi </span>
           <span
             className="h-1.5 w-1.5 rounded-full bg-[var(--accent)] shadow-[0_0_12px_var(--accent)]"
           ></span>
 
-          <span>FULL-STACK DEVELOPER </span>
+          <span className="text-sm">FULL-STACK DEVELOPER </span>
           <span className="block w-[80%] ml-[5%] justify-self-right text-preety text-[var(--text-secondary)]">React/Django developer with strong database and data-analysis skills (SQL, MongoDB, Cassandra)</span>
 
         </div>

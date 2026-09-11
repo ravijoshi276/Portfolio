@@ -5,3 +5,125 @@
 .cls-2 {
         fill: #0056d2;
       }
+
+/* Container styling */
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* --- BUTTON TIMINGS --- */
+.button {
+  width: 300px;
+  height: 50px;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: all 1300ms ease;
+}
+
+.text.shrinking, .text.loading, .text.morphing, .text.success {
+  opacity: 0;
+  transition: opacity 1ms linear;
+}
+
+.button.shrinking, .button.loading {
+  height: 10px;
+  width: 300px;
+  background-color: #2B2D2F;
+  border: 0;
+  border-radius: 100px;
+}
+
+.button.morphing, .button.success {
+  width: 0;
+  height: 10px;
+  border: 0;
+  opacity: 0;
+  transition: width 1ms linear;
+}
+
+
+.progress-bar {
+  position: absolute;
+  width: 0;
+  height: 10px;
+  background-color: #71DFBE;
+  border-radius: 100px;
+  transition: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar.loading {
+  width: 300px;
+  transition: width 2000ms linear;
+}
+
+.progress-bar.morphing, .progress-bar.success {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background-color: #71DFBE;
+  transition: width 750ms ease 500ms, height 750ms ease 500ms, border-radius 750ms ease 500ms;
+}
+
+
+.checkmark-svg {
+  width: 30px;
+  height: 35px;
+  display: block;
+}
+
+.st0 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.check {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+  animation: drawCheck 250ms ease-in-out forwards;
+}
+
+@keyframes drawCheck {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animation-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-fields {
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+.form-fields.hidden {
+  opacity: 0;
+  pointer-events: none; 
+}
+
+
+.button.error {
+  background-color: #ff4d4d;
+  border-color: #ff4d4d;
+  width: 300px;
+  height: 50px;
+  border-radius: 4px;
+}
+

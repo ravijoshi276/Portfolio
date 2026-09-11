@@ -24,7 +24,10 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
+input,textarea,select,option{
+  background: var(--bg-surface);
+  border:var(--border) 2px solid;
+}
 #nav-icon1 {
   position: relative;
   -webkit-transform: rotate(0deg);
