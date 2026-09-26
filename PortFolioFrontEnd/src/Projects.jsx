@@ -142,6 +142,7 @@ function Card({ title, stack, description, links ,image}) {
                         className="w-full h-full"
                         src={image}
                         alt={title + " Image"}
+                        loading='lazy'
                     />
                 </figure>
             </div>

@@ -25,7 +25,7 @@ export const ProjectList = [
         projects: [
             {
                 title: "Salifort Motors: Employee Retention Project",
-                image: "",
+                image: "https://res.cloudinary.com/f5j6k7bl/image/upload/v1790424929/sailfoidmotors.png",
                 description: {
                     Problem: "HR teams often have large amounts of employee data but struggle to identify the factors contributing to employee attrition. The goal was to understand employee turnover patterns and identify factors that could help HR improve retention.",
                     Approach: "Cleaned and explored employee data using Python, Pandas, NumPy, Matplotlib, and Seaborn. Performed exploratory and statistical analysis to identify relationships between attrition and factors such as job satisfaction, overtime, salary, job role, and tenure. Built and evaluated machine learning models using Scikit-learn to predict employee attrition and identify important predictive factors.",
@@ -36,22 +36,9 @@ export const ProjectList = [
                     project_link: "https://drive.google.com/file/d/1LdcvbdeRfeTZ0CuFntEKUwzhu8nLUE1K/view?usp=sharing"
                 }
             },
-            {
-                title: "Bike-Share Usage Analysis (Google Data Analytics Capstone)",
-                image: "",
-                description: {
-                    Problem: "Bike-share companies need to understand differences in usage patterns between casual riders and annual members to design more effective marketing strategies.",
-                    Approach: "Used SQL to extract and clean ride data, then analyzed and visualized usage patterns in R across rider type, time of day, trip duration, and season.",
-                    Result: "Delivered insights and recommendations to support a marketing strategy aimed at converting casual riders into annual members."
-                },
-                stack: ["SQL", "R"],
-                links: {
-                    project_link: "https://www.kaggle.com/code/ravijoshi276/case-study"
-                }
-            },
-            {
+             {
                 title: "Term Deposit Subscription Prediction",
-                image: "",
+                image: "https://res.cloudinary.com/f5j6k7bl/image/upload/v1790424929/classification.png",
                 description: {
                     Problem: "Banks run marketing campaigns to sell term deposits but often can't tell in advance which clients are likely to subscribe, wasting outreach effort.",
                     Approach: "Cleaned and explored client demographic and campaign data, then built and evaluated a classification model in Scikit-learn to predict subscription likelihood.",
@@ -63,8 +50,22 @@ export const ProjectList = [
                 }
             },
             {
-                title: "Housing Price Prediction",
-                image: "",
+                title: "Bike-Share Usage Analysis (Google Data Analytics Capstone)",
+                image: "https://res.cloudinary.com/f5j6k7bl/image/upload/v1790425662/bike_share.png",
+                description: {
+                    Problem: "Bike-share companies need to understand differences in usage patterns between casual riders and annual members to design more effective marketing strategies.",
+                    Approach: "Used SQL to extract and clean ride data, then analyzed and visualized usage patterns in R across rider type, time of day, trip duration, and season.",
+                    Result: "Delivered insights and recommendations to support a marketing strategy aimed at converting casual riders into annual members."
+                },
+                stack: ["SQL", "R"],
+                links: {
+                    project_link: "https://www.kaggle.com/code/ravijoshi276/case-study"
+                }
+            },
+           
+            {
+                title: "Property Price Prediction",
+                image: "https://res.cloudinary.com/f5j6k7bl/image/upload/v1790425105/propetyprice_prediction.png",
                 description: {
                     Problem: "Estimating housing prices accurately from raw listing data requires handling messy, high-cardinality features before any model can be trusted.",
                     Approach: "Applied feature engineering, data preprocessing, and exploratory data analysis, then trained a regression model in Scikit-learn on the cleaned dataset.",
@@ -72,12 +73,12 @@ export const ProjectList = [
                 },
                 stack: ["Python", "Scikit-learn", "Pandas"],
                 links: {
-                    project_link: "https://drive.google.com/file/d/1T0xGhbrrDzk5zVMZMFvQ-xOHHNRsfbfa/view?usp=drive_link"
+                    project_link: "https://www.kaggle.com/code/ravijoshi276/property-price-prediction"
                 }
             },
             {
                 title: "CTC / Salary Prediction Model",
-                image: "",
+                image: "https://res.cloudinary.com/f5j6k7bl/image/upload/v1790425355/Salary_Prediction.png",
                 description: {
                     Problem: "HR teams need a quick, transparent way to estimate a fair salary offer for new hires based on candidate attributes.",
                     Approach: "Built a linear regression model directly in Excel, transforming categorical variables and fitting the model to historical hiring data.",
@@ -85,7 +86,7 @@ export const ProjectList = [
                 },
                 stack: ["Excel"],
                 links: {
-                   
+                    project_link:'https://docs.google.com/spreadsheets/d/1fjHXciZGMdybjoy8CU2uIZM8RM7b0rk_/edit?usp=sharing&ouid=108701296102416188997&rtpof=true&sd=true'
                 }
             },
             {
